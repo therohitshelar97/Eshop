@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+        <style>
+            header{
+                background-image: linear-gradient(blue, blue);
+                border: 1px solid red;
+                height: 80px;
+            }
+    
+            .id{
+                background-image: linear-gradient(pink, skyblue, pink);
+            }
+            .r:hover {
+                transform: scale(0.9, 0.9);
+              
+            }
+        </style>
+    </head>
+    <body class="id">
+        <header class="container-fluid">
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="col">
+                        <a href="{{url_for('home')}}"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">home</button></a>
+                        <a href="{{url_for('mens')}}"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">men's</button></a>
+                        <a href="{{url_for('womens')}}"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">women's</button></a>
+                        <a href="{{url_for('kids')}}"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">kid's</button></a>
+                        <a href="{{url_for('fashion')}}"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">fashion</button></a>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="col">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <br>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://static.fibre2fashion.com/articleresources/images/89/8815/fashion-style-big_Big.jpg" class="d-block w-100" height="400" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:aqua"></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0150/1792/files/04-02-2021_01_KS_Blog.jpg?v=1612426961" class="d-block w-100" height="400" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1154707805.jpg?crop=1.00xw:0.776xh;0,0&resize=980:*" class="d-block w-100" height="400" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <div class="container-fluid">
+        <div>
+
+                <img src="../static/smart watch4.jpg" class="r" width="300" height="200" style="border:1px solid yellow; margin:20px">
+                <a href="{{url_for('mens')}}"><img src="../static/m1.jpg" class="r" width="300" height="200" style="float:left; border:1px solid yellow; margin:20px"></a>
+                <a href="{{url_for('gadget')}}"><img src="../static/smart watch.jpg" class="r" width="300" height="200" style="float:left; border:1px solid yellow; margin:20px"></a>
+                <img src="../static/phone.jpg" class="r" width="263" height="200" style="float:left; border:1px solid yellow; margin:20px">
+                <p style="margin-left:10px">
+                    <a href="{{url_for('mens')}}"><b class="class re">Best deals for the mens starting from 1099 RS</b></a> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b class="r">Smart Watches starting from RS 1999</b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <b class="r">Best Offers For Smart Phones</b>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+                    <b class="r">Smart Watches For Ladies And Kids</b>
+                </p>
+        </div>
+        <hr>
+        <section>
+            <img src="../static/one plus.jpg" class="r" width="300" height="300" style="border:1px solid yellow; margin:20px">
+            <img src="../static/lcd 39.jpg" class="r" width="300" height="300" style="border:1px solid yellow; margin:20px">
+            <img src="../static/check shirts.jpg" class="r" width="300" height="300" style="border:1px solid yellow; margin:20px">
+            <img src="../static/ladies.jpg" class="r" width="250" height="300" style="border:1px solid yellow; margin:20px">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r">One Plus Smart Phones</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                <b class="r">Best Offers On LED's And LCD's</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <b class="r">Mens Shirts Starting From 299</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r">Ladies Fashion Starting From RS 699</b>
+            </p>
+        </section>
+        <hr>
+        <section>
+            <h3>Shirts For Men's</h3>
+            <hr>
+            <a href=""><img src="../static/laptop.jpg" class="r" width="250" height="250" style="border:1px solid yellow; margin:20px"></a>
+            <a href=""><img src="../static/laptop2.jpg" class="r" width="250" height="250" style="border:1px solid yellow; margin:20px"></a>
+            <a href="{{url_for('womens')}}"><img src="../static/saree.jpg" class="r" width="200" height="250" style="border:1px solid yellow; margin:20px"></a>
+            <img src="../static/kids.jpg" class="r" width="300" height="250" style="border:1px solid yellow; margin:20px">
+            <img src="../static/kids1.jpg" class="r" width="100" height="250" style="border:1px solid yellow; margin:20px">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r">Laptop's i5,i3,i7</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r"><a href="">HP i5 Laptops</a></b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r"><a href="{{url_for('womens')}}">Stylish Saree RS 595</a></b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r">Kids Dresses RS 699</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b class="r">Red Shirt RS 699</b>
+
+            </p>
+        </section>
+        <hr>
+        
+    </div>
+    </body>
+</html>
